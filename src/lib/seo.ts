@@ -1,4 +1,4 @@
-export function pageMeta(opts: { title: string; description: string; path: string; origin?: string }) {
+export function pageMeta(opts: { title: string; description: string; path: string; origin?: string | undefined }) {
   const img = opts.origin ? `${opts.origin}/og-image.jpg` : undefined;
   return {
     meta: [
